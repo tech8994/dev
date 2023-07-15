@@ -1,0 +1,185 @@
+@import "../../../../theme/color/index.scss";
+@import "../../../../theme/font/index.scss";
+.specialProduct_Section{
+      width: 100%;    
+      .nested_specialProduct {
+        width: 90%;
+        margin: 30px auto;
+        .heading_specialProduct {
+           margin: 60px 0px;
+          h1 {
+            font-size: $MainHeading;
+            font-weight: $TextWeight;
+            font-family: $FontFmaily;
+            color: $MainColor;
+            text-align: center;
+            font-family: $FontFmaily;
+          }
+          
+        }
+    
+        // list of cards
+        .Cards_Section {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          margin: 20px 0px;
+          gap: 4px;
+          .slick-initialized .slick-slide{
+            padding: 4px !important;
+          }
+          
+          .slick-dots, .slick-next, .slick-prev{
+            display: none !important;
+          }
+          .child_card {
+            border: 15px solid #f3f3f3;
+            transition: 0.3s;
+    
+            .img {
+              position: relative;
+              img {
+                width: 100%;
+                height: 320px;
+                object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+              }
+              .img_icons {
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                right: 0;
+                overflow: hidden;
+                width: 100%;
+                height: 0;
+                transition: 0.5s ease;
+                position: absolute;
+                background-color: #ffffff9e;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // gap: 2px;
+                 .icon{
+                    // svg{
+                    //     background-color: #ffffff;
+                    //     margin: 2px;
+                    //     padding: 4px;
+                    //     font-size: xx-large;
+                        
+    
+                    // }
+                    svg{
+                      background-color: #ffffff;
+                      margin: 2px;
+                      padding: 4px;
+                      font-size: xx-large;
+                      color: black;
+                  }
+                 }
+              }
+            }
+            .img:hover .img_icons {
+              bottom: 0;
+              height: 100%;
+            }
+            .product_content {
+              padding: 12px;
+              text-align: center;
+              :first-child {
+                color: $Link_COLOR;
+              }
+              :nth-child(2) {
+                font-size: $BigText;
+                font-weight: $MainSubWeight;
+                color: $MainColor;
+              }
+            }
+            &:hover {
+              border: 15px solid #ffffff;
+              box-shadow: 0 0 20px #efefef;
+            }
+          }
+        }
+
+    .banner{
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            transform: scale(1);
+            transition: all 0.5s ease-in-out;
+        }
+        .content_banner{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.4);
+            h1{
+                font-size: $MainHeading;
+               font-weight: 700;
+                color: $WiteColor;
+                 margin-bottom: 4px;
+                 color: $MainColor;
+                 font-family: $FontFmaily;
+
+               }
+               p{
+                font-size: $StanderedText;
+                color: $MainColor;
+                margin-bottom: 12px;
+                font-family: $FontFmaily;
+
+               }
+               button{
+                width: 220px;
+                 display: flex;
+                 justify-content: center;
+                 align-items: flex-start;
+                 color: $MainColor;
+                 border: 2px solid $MainColor;
+                 background: none;
+                 padding: 14px 28px;
+                 font-size: $StanderedText;
+                 transition: all 0.25s ease-in-out;
+                 cursor: pointer;
+                 font-family: $FontFmaily;
+
+                 &:hover{
+                    background-color:$MainColor;
+                    color: $WiteColor;
+
+                 }
+               }
+               @media (max-width:425px) {
+                h1{
+                  font-size: $StanderedText;
+                }
+                p{
+                  font-size: $StanderedText;
+                }
+                button{
+                  width: 140px;
+                }
+               }
+  
+            
+        }
+    }
+    .banner:hover img{
+        transform: scale(1.2); 
+    }
+
+      }
+    
+}

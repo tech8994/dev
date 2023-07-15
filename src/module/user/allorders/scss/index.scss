@@ -1,0 +1,59 @@
+@import "../../../../theme/color/index.scss";
+@import "../../../../theme/font/index.scss";
+
+
+
+.allorders_section{
+    width: 100%;
+    .no-found h1{
+      font-weight: 300;
+      text-align: center;
+      margin: 20px 0px;
+    }
+    .allOrder_banner{
+        background-image: url("../../../../assest/images/banner1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 80px 0;
+        position: relative;
+        h1 {
+          margin-bottom: 0;
+          position: relative;
+          z-index: 1;
+          line-height: 75px;
+          font-size: 68px;
+          color: #fff;
+          font-weight: $TextWeight;
+          text-transform: capitalize;
+          text-align: center;
+          font-family: $FontFmaily;
+        }
+        
+    }
+    .nested_allorder_section{
+
+          width: 90%;
+          margin: 20px auto;
+          
+          .all_orders{
+            
+             h3{
+                font-size: $SubHeading;
+                font-weight: $TextWeight;
+               margin: 20px 0px;     
+             }     
+          }
+          // .tableBody_section{
+            .styled_details a{
+              color: #212529;
+              background-color: #e2e6ea;
+              border-color: #dae0e5;
+              cursor: pointer;
+              padding: 12px;
+              text-decoration: none;
+              border-radius: 4px;
+            }
+          // }
+    }
+}

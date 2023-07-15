@@ -1,0 +1,132 @@
+@import "../../../../theme/color/index.scss";
+@import "../../../../theme/font/index.scss";
+
+.banner_auth {
+  background-image: url("../../../../assest/images/banner1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 0;
+  position: relative;
+  h1 {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    line-height: 75px;
+    font-size: 68px;
+    color: #fff;
+    font-weight: $TextWeight;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: $FontFmaily;
+  }
+}
+.link_heading {
+  padding: 50px 0px;
+  display: flex;
+  // gap: 20px;
+  justify-content: center;
+  align-items: center;
+  a {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 20px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #0a1039;
+    text-decoration: none;
+  }
+  .line {
+    font-size: 24px;
+  }
+}
+.authentication_registration {
+  width: 100%;
+  .nested_authenticationregistration {
+    padding: 50px 0;
+    .tab-content {
+      max-width: 58.333333%;
+      margin-left: auto;
+      margin-right: auto;
+      .registation-form-container {
+        background: transparent none repeat scroll 0 0;
+        -webkit-box-shadow: 0 0 6px rgb(0 0 0 / 10%);
+        box-shadow: 0 0 6px rgb(0 0 0 / 10%);
+        padding: 80px;
+        text-align: left;
+        background-color: #fff;
+        height: auto;
+
+        .registration-register-form {
+          form {
+            input {
+              height: 45px;
+              border: none;
+              background-color: #f8f8f8;
+              font-size: 13px;
+              color: #bcbcbc;
+              margin-bottom: 10px;
+              padding: 2px 20px;
+              width: 100%;
+            }
+            input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+
+          /* Firefox */
+          input[type="number"] {
+            -moz-appearance: textfield;
+          }
+            .button-box {
+              .registration-toggle-btn {
+                padding: 10px 12px;
+                display: flex;
+                justify-content: space-between;
+                input[type="checkbox"] {
+                  height: 15px;
+                  margin: 0;
+                  position: relative;
+                  top: 2px;
+                  width: 17px;
+                  color: #010225;
+                  padding: 0 15px;
+                  background-color: transparent;
+                  border: 1px solid #ebebeb;
+                  font-size: 14px;
+                }
+                a {
+                  float: right;
+                  font-size: 15px;
+                  color: #010225;
+                  -webkit-transition: all 0.3s ease 0s;
+                  -o-transition: all 0.3s ease 0s;
+                  transition: all 0.3s ease 0s;
+                  text-decoration: none;
+                }
+              }
+              button {
+                background-color: #0a1039;
+                color: #fff;
+                border: medium none;
+                cursor: pointer;
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 1;
+                padding: 13px 30px 13px;
+                text-transform: uppercase;
+                -webkit-transition: all 0.3s ease 0s;
+                -o-transition: all 0.3s ease 0s;
+                transition: all 0.3s ease 0s;
+                margin: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

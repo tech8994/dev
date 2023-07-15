@@ -1,0 +1,53 @@
+@import "../../../../theme/color/index.scss";
+@import "../../../../theme/font/index.scss";
+.summary_section {
+  // width: 100%;
+  .nested_summarySection {
+    // width: 100%;
+    .heading_summary {
+      h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000;
+        margin-bottom: 16px;
+        font-family: $FontFmaily;
+      }
+    }
+    .bundle_details {
+      padding-top: 22px;
+      border-top: 1px solid #cacaca;
+      width: 100%;
+      .pricing_section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // margin-top: 8px;
+        margin-bottom: 12px !important;
+      }
+      .bundle-price {
+        font-size: 24px !important;
+        line-height: 26px !important;
+        font-family: $MainSubWeight;
+      }
+      .btn_cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+        a {
+          width: 100%;
+          margin-bottom: 20px;
+          background-color: #222;
+          color: #fff;
+          text-decoration: none;
+          font-weight: 400;
+          padding: 5px 15px;
+          font-family: $FontFmaily;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

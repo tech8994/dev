@@ -1,0 +1,73 @@
+@import "../../../../theme/color/index.scss";
+@import "../../../../theme/font/index.scss";
+.product_section{
+    width: 100%;
+    .nested_product_section{
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(380px, 1fr));
+        gap: 14px;
+        .product{
+            background-image: url("../../../../assest/images/bedding-sets.jpg");
+            background-position: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            gap: 18px;
+            .child_product{
+                opacity: 0;
+                transition: all 0.25s ease-in-out;
+            padding: 30px;
+            height: 340px;
+            }
+            h1{
+             font-size: $MainHeading;
+            font-weight: 700;
+             color: $WiteColor;
+              margin-bottom: 4px;
+            }
+            p{
+             font-size: $StanderedText;
+             color: $WiteColor;
+             margin-bottom: 12px;
+            }
+            button{
+             width: 220px;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              color: $WiteColor;
+              border: 2px solid $WiteColor;
+              background: none;
+              padding: 14px 28px;
+              font-size: $StanderedText;
+              transition: all 0.25s ease-in-out;
+              cursor: pointer;
+              &:hover{
+                 background-color: #b99b85;
+     color: #fff;
+              }
+            }
+    .child_product:hover{
+        // transition: ;
+        transform: scale(1.0);
+    opacity: 1;
+    background-color: #000000ad
+     }
+        }
+        .second{
+            background-image: url("../../../../assest/images/bedding-bundles.jpg");
+
+        }
+        .third{
+            background-image: url("../../../../assest/images/tabletops-kitchen.jpg");
+
+        }
+        @media (max-width:425px) {
+            width: 100%;
+            grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import "../../../theme/color/index.scss";
+@import "../../../theme/font/index.scss";
+.getAllCategory{
+    .nested_section{
+            // width: 90%;
+            // margin: 40px auto;
+            
+            // display: grid;
+            // grid-template-columns: 350px 1fr;
+            .filter_section{
+                h1, a{
+                    cursor: pointer;
+                    text-decoration: none;
+                    font-size: $SubHeading;
+                    font-weight: $MainSubWeight;
+                    color: black;
+                }
+              h4{
+                font-size: $SubHeading;
+                font-weight: $MainSubWeight;
+                cursor: pointer;
+                padding: 10px 0px;
+        
+               }
+               .collection{
+                 h4{
+                  font-size: $SubHeading;
+                  font-weight: $TextWeight;
+                 }
+                 
+               }
+               ul{
+                li{
+                  list-style-type: none;
+                  padding: 8px 0px;
+                  font-size: $StanderedText;
+                  cursor: pointer;
+                  
+                }
+              }
+            }
+           
+
+
+    }
+    // .filter_section{
+
+    // }
+}

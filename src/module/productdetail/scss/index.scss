@@ -1,0 +1,56 @@
+@import "../../../theme/color/index.scss";
+@import "../../../theme/font/index.scss";
+.product_details{
+    width: 100%;
+
+    .Loading_heading{
+        font-family: $FontFmaily;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 120px 0px;
+            h1{
+              font-size: $MainHeading;
+              line-height: 34px;
+              margin-bottom: 8px;
+              font-weight: $TextWeight;
+            //   height: 100%;
+             
+    
+            }
+    }
+    .nested_details{
+        width: 90%;
+        margin: 30px auto;
+        .product_heading{
+
+            display: flex;
+            justify-content: space-between;
+                  .prod_content{
+                    width: 40%;
+
+                         h1{
+                            padding: 20px 0px;
+                         }
+                  }
+                  .rating_section{
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    .nested_rating{
+                        display: flex;
+                        gap: 4px;
+                        padding: 0px 14px;
+                        color: #BCBCBC;
+                        font-size: 16px;
+                        border-right: 1px solid #BCBCBC;
+                    }
+                    .reviews, .orders{
+                        color: #BCBCBC;
+                        font-size: 16px;
+                    }
+                  }
+        }
+    }
+}

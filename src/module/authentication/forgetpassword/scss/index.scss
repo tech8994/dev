@@ -1,0 +1,55 @@
+@import "../../../../theme/color/index.scss";
+@import "../../../../theme/font/index.scss";
+
+.forgetpassword_section {
+  width: 100%;
+  .nested_forgetpassword {
+    width: 90%;
+    margin: 20px auto;
+    .card_forgetPassword {
+      width: 550px;
+      background: transparent none repeat scroll 0 0;
+      box-shadow: 0 0 6px rgb(0 0 0 / 10%);
+      padding: 80px;
+      text-align: left;
+      margin: 0 auto;
+      background-color: #fff;
+      text-align: center;
+      .email_box {
+        font-family: $FontFmaily;
+        label {
+          display: block;
+          margin-bottom: 5px;
+          padding-top: 14px;
+          text-align: left;
+        }
+        input {
+            width: 100%;
+          border: 1px solid #292b2c;
+          background-color: #fff;
+          color: #000;
+          max-width: 100%;
+          line-height: 1.2;
+          border-radius: 0;
+          padding: 10px 18px;
+        }
+        .email_sub_btn{
+            margin: 14px 0px;
+            display: flex;
+            justify-content: center;
+        }
+        button {
+          font-weight: 400;
+          color: white;
+          background: #212121;
+          border-radius: 2px;
+          transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+          width: 140px;
+          margin-bottom: 19px;
+          padding: 14px 35px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

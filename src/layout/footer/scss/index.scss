@@ -1,0 +1,80 @@
+@import "../../../theme/color/index.scss";
+@import "../../../theme/font/index.scss";
+.footer-section{
+    width: 100%;
+    .nested_footeSection{
+        width: 100%;
+       background-color: #3C2E25;
+       padding: 20px;
+       font-family: $FontFmaily;
+       .content_footer{
+           width: 90%;
+           margin: 0 auto;
+           display: grid;
+           grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+           gap: 18px;
+           padding: 40px 0px;
+           color: $WiteColor;
+           font-family: $FontFmaily;
+
+           .child{
+            
+              p{
+                color: $WiteColor;
+                font-size: $StanderedText;
+                font-family: $FontFmaily;
+                padding-bottom: 14px;
+              }
+              .followus{
+                font-size: $SubHeading;
+                 padding: 12px 0px;
+              }
+              .ul_links{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              li{
+                list-style-type: none;
+                a{
+                    color: $WiteColor;
+                    svg{
+                        font-size: 18px;
+                    }
+                }
+              }
+
+              }
+              .link{
+                
+                li{
+                    list-style-type: none;
+                    padding-bottom: 6px;
+
+                    a{
+                        color: $WiteColor;
+                        text-decoration: none;
+                        font-size: $StanderedText;
+                        span{
+                          padding-left: 18px;
+                        }
+
+                    }
+                    svg{
+                        margin-right: 4px;
+                        margin-bottom: -2px;
+                    }
+                  }
+              }
+           }
+       }
+      
+    }
+    .copyright{
+        color: $MainColor;
+        font-size: $BigText;
+        padding: 10px 0px;
+        p{
+            text-align: center;
+        }
+       }
+}

@@ -1,0 +1,91 @@
+@import "../../../theme/color/index.scss";
+@import "../../../theme/font/index.scss";
+.contactus_section{
+    width: 100%;
+    .banner_section{
+        width: 100%;
+        background-image: url("../../../assest/images/shop_banner.jpg");
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0;
+    position: relative;
+    h1{
+        font-family: $FontFmaily;
+        margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    line-height: 75px;
+    font-size: 68px;
+    color: #fff;
+    font-weight: $MainSubWeight;
+    text-transform: capitalize;
+    text-align: center;
+    }
+    }
+    .nested_contactus{
+       width: 90%;
+       margin: 0 auto;
+       display: flex;
+       justify-content: space-between;
+       gap: 20px;
+       padding: 60px 0px;
+       .details{
+    width: 40%;
+    padding: 20px 0px;
+        .address{
+            h5{
+                font-size: 22px;
+             font-weight: 600;
+             color: #000;
+           margin-bottom: 8px;
+               padding: 15px 0;
+    border-bottom: 1px solid #d9d9d9;
+       
+            }
+         .nested_address{
+            display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+            flex-direction: column;
+            h6{
+                font-size: 14px;
+    font-weight: 600;
+    color: #000;
+            }
+            // div{
+            //     width: 50%;
+            // }
+         } 
+         .get_in_touch{
+            padding: 4px 0px;
+            input,textarea{
+                width: 100%;
+                padding: 4px;
+                margin: 8px 0px;
+                font-size: 16px;
+                font-family: $FontFmaily;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }  
+        }
+       }
+       .map{
+        width: 70%;
+       }
+    @media (max-width:1024px) {
+      flex-wrap: wrap;  
+    }
+    @media (max-width:768px) {
+        .details{
+            width: 100%;
+        }
+        .map{
+            width: 100%;
+            height: 400px;
+        }
+      }
+    }
+}

@@ -1,0 +1,118 @@
+@import "../../../../theme/color/index.scss";
+@import "../../../../theme/font/index.scss";
+.admin-dashboard {
+  width: 100%;
+  .banner {
+    background-image: url("../../../../assest/images/banner1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0;
+    position: relative;
+    h1 {
+      margin-bottom: 0;
+      position: relative;
+      z-index: 1;
+      line-height: 75px;
+      font-size: 68px;
+      color: #fff;
+      font-weight: $TextWeight;
+      text-transform: capitalize;
+      text-align: center;
+      font-family: $FontFmaily;
+    }
+  }
+  .nested_dashboard, .main_admin {
+    width: 80%;
+    margin: 0 auto;
+    .btn_section {
+      margin: 40px 0px 10px 0px;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        li {
+          list-style-type: none;
+          position: relative;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          min-width: 0;
+          word-wrap: break-word;
+          background-color: #fff;
+          background-clip: border-box;
+          border: 1px solid rgba(0, 0, 0, 0.125);
+          border-radius: 0.25rem;
+           text-align: center;
+           padding: 30px 0px;
+          a{
+           text-decoration: none;
+           color: black;
+           width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+          }
+        }
+      }
+    }
+    .admin_dashboard_details{
+        .prod_details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            div {
+              display: block;
+              overflow: hidden;
+              position: relative;
+              padding: 15px;
+              margin: 1em 0;
+              background-color: #fff;
+              border-radius: 4px;
+              border: 1px solid #ddd;
+            }
+            .total_cost, .total_purchase, .total_delivered, .total_delivered, .total_canceled {
+              .amount {
+                text-align: center;
+                position: relative;
+                width: 100%;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+                h4 {
+                  display: block;
+                  font-size: 28px;
+                  font-weight: 600;
+                }
+              }
+              .bottom_section {
+                padding: 10px 0 0;
+                margin-top: 10px;
+                color: #aaa;
+                font-size: 12px;
+                border-top: 1px solid #eee;
+                display: flex;
+                gap: 14px;
+                align-items: center;
+              }
+            }
+      
+          }
+    }
+    .latest_orders{
+        h1{
+            font-size: $SubHeading;
+             font-weight: $TextWeight;
+            margin: 20px 0px;     
+        }
+    
+    }
+  }
+}

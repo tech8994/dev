@@ -1,0 +1,108 @@
+@import "../../../../theme/color/index.scss";
+@import "../../../../theme/font/index.scss";
+.shop_filerSection {
+  .cards_product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 14px;
+    height: fit-content;
+  }
+  .css-wjh20t-MuiPagination-ul {
+    width: 100%;
+    justify-content: center;
+    margin: 18px auto;
+  }
+  .nested_card {
+    // .child_card {
+    border: 15px solid #f3f3f3;
+    transition: 0.3s;
+    .img {
+      position: relative;
+      img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+        // height: 100%;
+      }
+      .img_icons {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: 0.5s ease;
+        position: absolute;
+        background-color: #ffffff9e;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // gap: 2px;
+        .icon {
+          
+          svg{
+            background-color: #ffffff;
+            margin: 2px;
+            padding: 4px;
+            font-size: xx-large;
+            color: black;
+        }
+        }
+      }
+    }
+    .img:hover .img_icons {
+      bottom: 0;
+      height: 100%;
+    }
+    .product_content {
+      padding: 12px;
+      text-align: center;
+      a {
+        text-decoration: none;
+      }
+      :first-child {
+        color: $Link_COLOR;
+      }
+      :nth-child(2) {
+        font-size: 24px;
+        font-weight: $MainSubWeight;
+        color: $MainColor;
+        padding: 10px 0px;
+        position: relative;
+        padding-right: 10px;
+
+        del {
+          font-size: 14px;
+          position: absolute;
+          top: 10px;
+          padding-left: 4px;
+        }
+      }
+    }
+    &:hover {
+      border: 15px solid #ffffff;
+      box-shadow: 0 0 20px #efefef;
+    }
+    //   }
+  }
+  .prev_next_btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+    gap: 20px;
+    button {
+      background-color: transparent !important;
+      border: none;
+      svg {
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

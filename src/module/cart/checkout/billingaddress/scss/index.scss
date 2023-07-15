@@ -1,0 +1,185 @@
+@import "../../../../../theme/color/index.scss";
+@import "../../../../../theme/font/index.scss";
+
+.checkout {
+  display: flex;
+  gap: 20px;
+  
+}
+.billingaddress_section,
+.payment_details, .payment_gatway {
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .nested_billingaddress, .nested_paymentDetails, .nested_payment_gatway {
+    background-color: #fff;
+    padding: 45px 63px 77px;
+    font-family: $FontFmaily;
+    .billing_heading, .payment_heading, .payment_paymentgatway {
+      h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 0 30px;
+        position: relative;
+        line-height: 1;
+        padding: 0 0 16px;
+        font-family: $FontFmaily;
+        &::before {
+          position: absolute;
+          content: "";
+          height: 3px;
+          width: 50px;
+          background-color: #eeeeee;
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
+    .billing_filleds {
+      .billing_row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 18px;
+        padding: 8px 0px;
+        .field {
+          width: 100%;
+          label {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+          }
+          input {
+            width: 100%;
+            display: block;
+            width: 100%;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out,
+              box-shadow 0.15s ease-in-out;
+            &:focus {
+              outline: none;
+            }
+          }
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+
+          /* Firefox */
+          input[type="number"] {
+            -moz-appearance: textfield;
+          }
+        }
+      }
+      .error_mg{
+        color: red;
+      }
+    }
+  }
+}
+.payment_details {
+  width: 100%;
+  .payment_list{
+    ul{
+        li{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 0px;
+        }
+    }
+  }
+  .total-order{
+    margin: 58px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    h3{
+        font-size: 16px;
+    color: #333333;
+    display: block;
+    margin-bottom: 22px;
+    font-weight: bold;
+    }
+  }
+  .pay_btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      font-weight: 400;
+      color: white;
+      background: #212121;
+      border-radius: 2px;
+      transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+      width: 140px;
+      margin-bottom: 19px;
+      padding: 14px 35px;
+      cursor: pointer;
+      border: none;
+    }
+  }
+  
+}
+
+.payment_gatway{
+ padding-left: 0px !important;
+ padding-right: 0px !important;
+    .nested_payment_gatway{
+        .card_details{
+          .card_data{
+            width: 100%;
+          label {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+          }
+          input {
+            width: 100%;
+            display: block;
+            width: 100%;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out,
+              box-shadow 0.15s ease-in-out;
+            &:focus {
+              outline: none;
+            }
+          }
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+
+          /* Firefox */
+          input[type="number"] {
+            -moz-appearance: textfield;
+          }
+          }
+          .list_data{
+            display: grid;
+            padding: 20px 0px;
+            grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+            gap: 20px;
+
+          }   
+        }
+    }
+}

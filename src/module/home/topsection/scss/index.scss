@@ -1,0 +1,105 @@
+@import "../../../../theme/color/index.scss";
+@import "../../../../theme/font/index.scss";
+
+.top_section{
+    width: 100%;
+    .nested_top_section{
+        width: 90%;
+        margin: 0 auto;
+
+        .slick-next, .slick-prev{
+            display: none !important;
+
+        }
+        .slick-dots {
+            margin: 33px 0px;
+            li.slick-active button:before{
+                transition: opacity .2s ease;
+                border-radius: 30px;
+               background: #74747400;
+               border: 4px solid #fff;
+               width: 8px;
+    height: 8px;
+            }
+
+      li button:before {
+            // top: -45px;
+    width: 16px;
+    height: 16px;
+    background: #d6d6d675;
+    color: transparent;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+        }
+    }
+     .item{
+        position: relative;
+        img{
+            width: 100%;
+            height: 475px;
+    object-fit: cover;
+    object-position: center;
+            @media (max-width:425px) {
+                height: 230px;
+            }
+        }
+        .item_content{
+           position: absolute;
+           top: 0px;
+           left: 8%;
+           color: $WiteColor;
+           height: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;           
+        //    gap: 18px;
+           h1{
+            font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25px;
+           }
+           p{
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 30px;
+           }
+           button, a{
+            text-decoration: none;
+            width: 220px;
+             display: flex;
+             justify-content: center;
+             align-items: flex-start;
+             color: $WiteColor;
+             border: 2px solid $WiteColor;
+             background: none;
+             padding: 14px 28px;
+             font-size: $StanderedText;
+             transition: all 0.25s ease-in-out;
+             cursor: pointer;
+             &:hover{
+                background-color: #b99b85;
+    color: #fff;
+             }
+           }
+           @media (max-width:768px) {
+             h1{
+                font-size: $SubHeading;
+                margin-bottom: 0px;
+             }
+             p{
+                font-size: $StanderedText;
+                margin-bottom: 4px;
+             }
+             button{
+                width: 170px;
+             }
+           }
+        } 
+
+     }
+ @media (max-width:425px) {
+    width: 100%;
+ }
+    }
+}

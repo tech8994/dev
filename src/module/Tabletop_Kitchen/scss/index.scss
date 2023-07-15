@@ -1,0 +1,117 @@
+@import "../../../theme/color/index.scss";
+@import "../../../theme/font/index.scss";
+
+.Tabletop_section{
+    width: 100%;
+  .Tabletop_banner_section{
+    width: 100%;
+    background-image: url("../../../assest/images/shop_banner.jpg");
+    background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+padding: 80px 0;
+position: relative;
+h1{
+    font-family: $FontFmaily;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    line-height: 75px;
+    font-size: 68px;
+    color: #fff;
+    font-weight: $MainSubWeight;
+    text-transform: capitalize;
+    text-align: center;
+    } 
+
+  }
+
+  .Tabletop_showcase{
+    margin: 40px 0px;
+    .cards_product {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 14px;
+        height: fit-content;
+        .nested_card {
+            // .child_card {
+            border: 15px solid #f3f3f3;
+            transition: 0.3s;
+            .img {
+              position: relative;
+              img {
+                width: 100%;
+                height: 320px;
+                object-fit: cover;
+                object-position: center;
+                overflow: hidden;
+                // height: 100%;
+              }
+              .img_icons {
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                right: 0;
+                overflow: hidden;
+                width: 100%;
+                height: 0;
+                transition: 0.5s ease;
+                position: absolute;
+                background-color: #ffffff9e;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // gap: 2px;
+                .icon {
+                  
+                  svg{
+                    background-color: #ffffff;
+                    margin: 2px;
+                    padding: 4px;
+                    font-size: xx-large;
+                    color: black;
+                }
+                }
+              }
+            }
+            .img:hover .img_icons {
+              bottom: 0;
+              height: 100%;
+            }
+            .product_content {
+              padding: 12px;
+              text-align: center;
+              a {
+                text-decoration: none;
+              }
+              :first-child {
+                color: $Link_COLOR;
+              }
+              :nth-child(2) {
+                font-size: 24px;
+                font-weight: $MainSubWeight;
+                color: $MainColor;
+                padding: 10px 0px;
+                position: relative;
+                padding-right: 10px;
+        
+                del {
+                  font-size: 14px;
+                  position: absolute;
+                  top: 10px;
+                  padding-left: 4px;
+                }
+              }
+            }
+            &:hover {
+              border: 15px solid #ffffff;
+              box-shadow: 0 0 20px #efefef;
+            }
+            //   }
+          }
+      }
+  }
+
+}

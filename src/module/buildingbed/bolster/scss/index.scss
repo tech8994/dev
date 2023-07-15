@@ -1,0 +1,116 @@
+@import "../../../../theme/color/index.scss";
+@import "../../../../theme/font/index.scss";
+.bolster{
+    .nested_bolster{
+        font-family: $FontFmaily;
+        .select_box{
+            p{
+                margin-bottom: 6px;
+                max-width: 100%;
+                line-height: 20px;
+                font-size: $BigText;
+                font-weight: $TextWeight;
+                
+            }
+            .type_btn{
+                ul{
+                   display: flex;
+                   gap: 14px;
+                   align-items: flex-start;
+                   flex-wrap: wrap;
+                   margin: 12px 0px;
+                    li{
+                        list-style-type: none;
+                        // text-align: center;
+                        margin: 14px 0px;
+                        
+                        a, span{
+                            color: black;
+                            text-decoration: none;
+                            border: 1px solid #E1E1E1;
+                            border-radius: 2px;
+                            // line-height: 20px;
+                            transition: all ease-in-out .2s;
+                            padding: 16px;
+                            width: 100%;
+                            cursor: pointer;
+                        }
+                        .active{
+                            background: transparent;
+                            color: #000;
+                            border: 1px solid #000;
+                            transition: border .3s ease-in-out, background .3s ease-in-out, color .3s ease-in-out;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .select_color{
+           p{
+            margin-bottom: 6px;
+            max-width: 100%;
+            line-height: 20px;
+            font-size: $BigText;
+            font-weight: $TextWeight;
+           } 
+
+           .selecting_section{
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-flow: row wrap;
+                gap: 14px;
+                width: 100%;
+                transition: all .3s linear;
+                margin: 18px 0px;
+                li{
+                  width: 40px;          
+                  height: 40px;
+                  list-style-type: none;
+                  position: relative;
+                  cursor: pointer;
+                  img{
+                    // padding: 8px;
+                    width: 100%;
+
+                  }
+                  
+                }
+                .selected{
+                    &::before{
+                        content: "";
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        border: 1px solid #000;
+                        display: block;
+                        transform: translate(-50%,-50%);
+                        top: 50%;
+                        left: 50%;
+                        padding: 4px;
+                    }
+                }
+                
+
+            }
+           }
+        }
+        .btn_next{
+          button{
+            color: white;
+            background: #000;
+            padding: 12px 16px;
+            margin-left: 4px;
+            font-weight: 500 !important;
+            // letter-spacing: .25em;
+            font-size: 18px;
+            font-family: $FontFmaily;
+    border: none;
+    cursor: pointer;
+
+          }
+        }
+    }
+}
